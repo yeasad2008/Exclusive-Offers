@@ -1,185 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Offers & Rewards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cash App Giveaway</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: 'Inter', sans-serif;
     }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-      color: #1f2937;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background-color: #00d54b;
       color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-      animation: slideDown 1s ease-in-out;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: relative;
     }
-
-    @keyframes slideDown {
-      0% { opacity: 0; transform: translateY(-50px); }
-      100% { opacity: 1; transform: translateY(0); }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
     }
-
-    header h1 {
-      font-size: 28px;
-      font-weight: bold;
-      color: #38bdf8;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 16px;
-      color: #cbd5e1;
-    }
-
     .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .offer {
-      background: #f9fafb;
-      border-left: 6px solid #06b6d4;
+      background: #fff;
+      color: #000;
       border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-      overflow: hidden;
-      margin-bottom: 40px;
-      animation: fadeInUp 0.8s ease both, pulse 3s infinite;
-    }
-
-    .offer:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.4); }
-      70% { box-shadow: 0 0 0 15px rgba(6, 182, 212, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
-    }
-
-    .offer img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      background-color: #e2e8f0;
-    }
-
-    .offer-content {
-      padding: 30px 20px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
       text-align: center;
+      max-width: 400px;
+      width: 100%;
     }
-
-    .offer-content h2 {
-      font-size: 22px;
-      color: #0f172a;
+    h1 {
+      font-size: 24px;
       margin-bottom: 10px;
     }
-
-    .offer-content p {
-      font-size: 15px;
-      color: #2563eb;
+    p {
+      font-size: 14px;
       margin-bottom: 20px;
     }
-
-    .btn {
-      background: linear-gradient(90deg, #9333ea, #f43f5e);
-      color: white;
-      padding: 12px 30px;
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
       border-radius: 8px;
-      text-decoration: none;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #00d54b;
+      border: none;
+      color: white;
+      padding: 14px;
+      width: 100%;
+      border-radius: 8px;
       font-weight: bold;
-      transition: background 0.3s ease-in-out;
-      animation: pulseBtn 2.5s infinite;
+      cursor: pointer;
     }
-
-    .btn:hover {
-      background: linear-gradient(90deg, #7e22ce, #e11d48);
+    .countdown {
+      margin-top: 20px;
+      font-weight: bold;
+      color: red;
     }
-
-    @keyframes pulseBtn {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
+    .remaining {
       font-size: 14px;
-      color: #6b7280;
-      margin-top: 60px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>✨ Unlock Your Exclusive Rewards</h1>
-    <p>Specially curated deals just for you – limited time only.</p>
-  </header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cash_App_logo.svg/512px-Cash_App_logo.svg.png" class="logo" alt="Cash App Logo">
   <div class="container">
-    <!-- Offer 1 -->
-    <div class="offer">
-      <img src="https://via.placeholder.com/1000x220.png?text=VPN+Demo+Image" alt="VPN Offer">
-      <div class="offer-content">
-        <h2>🔐 Premium VPN Access – 7 Days Free</h2>
-        <p>Protect your privacy and surf anonymously. Instant access without credit card.</p>
-        <a href="#" class="btn">Get VPN</a>
-      </div>
-    </div>
-    <!-- Offer 2 -->
-    <div class="offer">
-      <img src="https://via.placeholder.com/1000x220.png?text=Cash+App+Demo+Image" alt="Cash App Offer">
-      <div class="offer-content">
-        <h2>💸 Claim $100 via Cash App</h2>
-        <p>Sign up and receive an instant $100 bonus directly to your account.</p>
-        <a href="https://smrturl.co/a/s5fca8ce62e/663?s1=Yeasad" class="btn">Claim Now</a>
-      </div>
-    </div>
-    <!-- Offer 3 -->
-    <div class="offer">
-      <img src="https://via.placeholder.com/1000x220.png?text=Gift+Card+Demo+Image" alt="Gift Card Offer">
-      <div class="offer-content">
-        <h2>🎁 Win a Gift Card Worth $100</h2>
-        <p>Join our giveaway by entering your email and grab a free gift card.</p>
-        <a href="https://smrturl.co/a/s5fca8ce62e/62?s1=ghu" class="btn">Enter Giveaway</a>
-      </div>
-    </div>
+    <h1>Claim Your $750 Cash App Reward!</h1>
+    <p>Enter your Cash App username to continue</p>
+    <input type="text" id="username" placeholder="$Username" />
+    <button onclick="submitForm()">Submit</button>
+    <div class="countdown" id="timer"></div>
+    <div class="remaining" id="remaining">Spots left: <span id="spots">18</span></div>
   </div>
-  <footer>
-    &copy; 2025 RewardsHub – All rights reserved.
-  </footer>
 
-<!-- Ads Section -->
-<script type="text/javascript">
-	atOptions = {
-		'key' : '8d4d4f87b5559687a101a99b50e3b830',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/8d4d4f87b5559687a101a99b50e3b830/invoke.js"></script>
+  <script>
+    let seconds = 180;
+    const timerElement = document.getElementById("timer");
+    const spotsElement = document.getElementById("spots");
+    const offerURL = "https://example.com/cpa-offer"; // Replace with your CPA URL
+    const redirectURL = "https://example.com/backup-offer";
 
+    function updateTimer() {
+      const minutes = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      timerElement.textContent = `Offer expires in ${minutes}:${secs < 10 ? "0" : ""}${secs}`;
+      if (seconds > 0) {
+        seconds--;
+        if (seconds % 20 === 0 && Number(spotsElement.textContent) > 1) {
+          spotsElement.textContent = Number(spotsElement.textContent) - 1;
+        }
+      } else {
+        clearInterval(timer);
+      }
+    }
+    const timer = setInterval(updateTimer, 1000);
+
+    function submitForm() {
+      const username = document.getElementById("username").value.trim();
+      if (username.length < 3) {
+        alert("Please enter a valid Cash App username.");
+        return;
+      }
+      window.location.href = offerURL + '?user=' + encodeURIComponent(username);
+    }
+
+    // Prevent back navigation
+    history.pushState(null, document.title, location.href);
+    window.addEventListener('popstate', function () {
+      location.href = redirectURL;
+    });
+  </script>
 </body>
 </html>
