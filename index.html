@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Offers & Rewards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+
+    @keyframes slideDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #cbd5e1;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .offer {
+      background: #f9fafb;
+      border-left: 6px solid #06b6d4;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease both, pulse 3s infinite;
+    }
+
+    .offer:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.4); }
+      70% { box-shadow: 0 0 0 15px rgba(6, 182, 212, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
+    }
+
+    .offer img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background-color: #e2e8f0;
+    }
+
+    .offer-content {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .offer-content h2 {
+      font-size: 22px;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .offer-content p {
+      font-size: 15px;
+      color: #2563eb;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #9333ea, #f43f5e);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease-in-out;
+      animation: pulseBtn 2.5s infinite;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #7e22ce, #e11d48);
+    }
+
+    @keyframes pulseBtn {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+      color: #6b7280;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✨ Unlock Your Exclusive Rewards</h1>
+    <p>Specially curated deals just for you – limited time only.</p>
+  </header>
+  <div class="container">
+    <!-- Offer 1 -->
+    <div class="offer">
+      <img src="https://via.placeholder.com/1000x220.png?text=VPN+Demo+Image" alt="VPN Offer">
+      <div class="offer-content">
+        <h2>🔐 Premium VPN Access – 7 Days Free</h2>
+        <p>Protect your privacy and surf anonymously. Instant access without credit card.</p>
+        <a href="#" class="btn">Get VPN</a>
+      </div>
+    </div>
+    <!-- Offer 2 -->
+    <div class="offer">
+      <img src="https://via.placeholder.com/1000x220.png?text=Cash+App+Demo+Image" alt="Cash App Offer">
+      <div class="offer-content">
+        <h2>💸 Claim $100 via Cash App</h2>
+        <p>Sign up and receive an instant $100 bonus directly to your account.</p>
+        <a href="#" class="btn">Claim Now</a>
+      </div>
+    </div>
+    <!-- Offer 3 -->
+    <div class="offer">
+      <img src="https://via.placeholder.com/1000x220.png?text=Gift+Card+Demo+Image" alt="Gift Card Offer">
+      <div class="offer-content">
+        <h2>🎁 Win a Gift Card Worth $100</h2>
+        <p>Join our giveaway by entering your email and grab a free gift card.</p>
+        <a href="#" class="btn">Enter Giveaway</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 RewardsHub – All rights reserved.
+  </footer>
+
+<!-- Ads Section -->
+<div style="width: 100%; max-width: 728px; height: 90px; margin: 40px auto; position: relative; background: #e2e8f0; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #1f2937; font-size: 16px;">
+  <div style="position: absolute; top: -14px; left: 15px; background: #64748b; color: white; font-size: 12px; padding: 2px 6px; border-radius: 4px;">Ads</div>
+  <span>728x90 Banner Ad Placeholder (Demo)</span>
+</div>
+
+</body>
+</html>
